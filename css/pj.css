@@ -1,0 +1,70 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	padding-bottom: 0.15em;
+	color: #222!important;
+	background: #fc0;
+	padding: 0.15em 0.25em;
+	box-shadow: inset #fc0 0px -0.08em;
+	border-radius: 0.1em;
+}
+
+.reveal .slides p {
+	font-size: 1em;
+}
+
+.reveal .slides p.bgt{
+	font-size: 1.5em;
+}
+.reveal .slides p.smt{
+	font-size: 0.5em;
+}
+
+#foot,
+#head {
+	position: fixed;
+	left: 0;
+	width: 100%;
+	height: 8vh;
+	background: #000;
+	color: #fc0;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+#head {
+	top: 0;
+	box-shadow: inset #fc0 0px -2px;
+}
+
+#foot {
+	bottom: 0;
+	justify-content: flex-start;
+	padding-left: 1em;
+}
+
+#main {
+	height: 84vh;
+	width: 100%;
+	position: fixed;
+	top: 8vh;
+	left: 0;
+}
+
+.reveal .controls {
+	position: fixed;
+	transform: scale(0.4);
+	bottom: 0.5vh;
+	top: auto;
+}
+.row{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+}
