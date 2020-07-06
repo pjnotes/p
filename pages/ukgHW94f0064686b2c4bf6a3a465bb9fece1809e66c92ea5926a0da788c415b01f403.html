@@ -6,7 +6,7 @@
 	<meta name="author" content="www.frebsite.nl" />
 	<meta name="viewport" content="width=device-width minimum-scale=1.0 maximum-scale=1.0 user-scalable=no" />
 
-	<title>mmenu.js demo</title>
+	<title>UKG | Home</title>
 
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -44,7 +44,7 @@
 					<span class="fa fa-bars"></span>
 				</a>
 				<span>
-					Demo
+					UKG Daily HW
 				</span>
 				<button onclick="toggleFullScreen()"><span class="fa fa-arrows-alt"></span></button>
 		</div>
@@ -52,7 +52,7 @@
 		<div class="content">
 
 			<div id="hideDiv" class="w3-card-4 w3-pale-green w3-hover-shadow w3-center">
-				<h1>Sign In Successful!</h1>
+				<h1>Welcome! Sign In Successful!</h1>
 				<p>
 					Click the button below to load all the HW.
 				</p>
@@ -94,7 +94,7 @@
 								<div class="swiper-slide">
 									<figure>
 										<img src="../assets/ukg/200707_04.jpg" alt="HW Page Photo">
-										<figcaption><b>Learn spellings of flowers</b></figcaption>
+										<figcaption><b>Learn & write spellings of flowers</b></figcaption>
 									</figure>
 								</div>
 							</div>
@@ -762,14 +762,7 @@
 					<div class="swiper-slide">Slide 5</div>
 					<div class="swiper-slide">Slide 6</div>
 				</div>
-				<!-- If we need pagination ->
-				<div class="swiper-pagination"></div-->
-			
-				<!-- If we need navigation buttons >
-				<div class="swiper-button-prev"></div>
-				<div class="swiper-button-next"></div-->
-			
-				<!-- If we need scrollbar -->
+
 				<div class="swiper-scrollbar scrollDay"></div>
 			</div>
 
@@ -807,7 +800,6 @@
 		</nav>
 	</div>
 
-	<!-- mmenu scripts -->
 	<script src="../js/jquery-3.5.1.min.js"></script>
 	<script src="../js/uikit.min.js"></script>
 	<script src="../js/uikit-icons.min.js"></script>
@@ -821,44 +813,13 @@
 			counters: true,
 			searchfield: {
 				placeholder: 'Search for HW...',
-			},/*
-			iconbar: {
-				use: '(min-width: 450px)',
-				top: [
-					'<a href="#/"><span class="fa fa-home"></span></a>',
-				],
-				bottom: [
-					'<a href="#/"><span class="fa fa-twitter"></span></a>',
-					'<a href="#/"><span class="fa fa-facebook"></span></a>',
-					'<a href="#/"><span class="fa fa-youtube"></span></a>',
-				],
 			},
-			sidebar: {
-				collapsed: {
-					use: '(min-width: 450px)',
-					hideNavbar: false,
-				},
-				expanded: {
-					//use: '(min-width: 992px)',
-				},
-			},*/
 			navbars: [{
 					content: ['prev', 'breadcrumbs', 'close'],
 				},
 				{
 					content: ['searchfield'],
-				},/*
-				{
-					type: 'tabs',
-					content: [
-						'<a href="#panel-menu"><i class="fa fa-bars"></i> <span>Menu</span></a>',
-						'<a href="#panel-account"><i class="fa fa-user"></i> <span>Account</span></a>',
-						'<a href="#panel-cart"><i class="fa fa-shopping-cart"></i> <span>Cart</span></a>',
-					],
 				},
-				{
-					content: ['prev', 'breadcrumbs', 'close'],
-				},*/
 				{
 					position: 'bottom',
 					content: ['prev', 'breadcrumbs', 'close'],
@@ -886,75 +847,36 @@
 
 	<script>
 		var mySwiper = new Swiper('.swiperDay', {
-			// Optional parameters
 			keyboard: {
 				enabled: true,
 			},
 			direction: 'vertical',
 			loop: false,
-			/*
-			// If we need pagination
-			pagination: {
-				el: '.swiper-pagination',
-			},*/
-			// Navigation arrows
 			navigation: {
 				nextEl: '.nextDay',
 				prevEl: '.prevDay',
 			},
-			// And if we need scrollbar
 			scrollbar: {
 				el: '.scrollDay',
 			},
 		});
 		var swiperV = new Swiper('.swiperPage', {
-			//direction: 'horizontal',
 			keyboard: {
 				enabled: true,
 			},
 			spaceBetween: 30,
       		grabCursor: true,
 			loop: false,
-			// Navigation arrows
 			navigation: {
 				nextEl: '.nextPage',
 				prevEl: '.prevPage',
-			},/*
-			scrollbar: {
-				el: '.scrollPage',
-			},*/
+			},
 			pagination: {
 				type:'fraction',
 				el: '.scrollPage',
 			},
 		});
 	</script>
-	<!--script>
-		var elem = document.documentElement;
-			function openFullscreen() {
-			if (elem.requestFullscreen) {
-				elem.requestFullscreen();
-			} else if (elem.mozRequestFullScreen) { /* Firefox */
-				elem.mozRequestFullScreen();
-			} else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
-				elem.webkitRequestFullscreen();
-			} else if (elem.msRequestFullscreen) { /* IE/Edge */
-				elem.msRequestFullscreen();
-			}
-		}
-		
-		function closeFullscreen() {
-			if (document.exitFullscreen) {
-				document.exitFullscreen();
-			} else if (document.mozCancelFullScreen) {
-				document.mozCancelFullScreen();
-			} else if (document.webkitExitFullscreen) {
-				document.webkitExitFullscreen();
-			} else if (document.msExitFullscreen) {
-				document.msExitFullscreen();
-			}
-		}
-	</script-->
 	<script>
 			function toggleFullScreen() {
 				$("#hideDiv").hide();
