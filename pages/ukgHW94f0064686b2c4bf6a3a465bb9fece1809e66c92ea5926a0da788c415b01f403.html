@@ -769,45 +769,56 @@
 		</div>
 		<nav id="menu">
 			<ul>
-				<li><a href="#">Home</a></li>
+				<li><a href="https://pjnotes.github.io/p/pages/ukgHW94f0064686b2c4bf6a3a465bb9fece1809e66c92ea5926a0da788c415b01f403.html">Home</a></li>
 				<li>
-					<span>About us</span>
+					<span>Week 01</span>
 					<ul>
-						<li><a href="#about/history">History</a></li>
-						<li>
-							<span>The team</span>
-							<ul>
-								<li>
-									<a href="#about/team/management">Management</a>
-								</li>
-								<li>
-									<a href="#about/team/sales">Sales</a>
-								</li>
-								<li>
-									<a href="#about/team/development">Development</a>
-								</li>
-							</ul>
-						</li>
-						<li><a href="#about/address">Our address</a></li>
+						<li><a href="#">Maths</a></li>
+						<li><a href="#">English</a></li>
+						<li><a href="#">Kannada</a></li>
+						<li><a href="#">Hindi</a></li>
+						<li><a href="#">GK</a></li>
+						<li><a href="#">Drawing</a></li>
 					</ul>
 				</li>
-				<li><a href="#contact">Contact</a></li>
+				<li>
+					<span>Week 02</span>
+					<ul>
+						<li><a href="#">Maths</a></li>
+						<li><a href="#">English</a></li>
+						<li><a href="#">Kannada</a></li>
+						<li><a href="#">Hindi</a></li>
+						<li><a href="#">GK</a></li>
+						<li><a href="#">Drawing</a></li>
+					</ul>
+				</li>
+				<li>
+					<span>Week 03</span>
+					<ul>
+						<li><a href="#">Maths</a></li>
+						<li><a href="#">English</a></li>
+						<li><a href="#">Kannada</a></li>
+						<li><a href="#">Hindi</a></li>
+						<li><a href="#">GK</a></li>
+						<li><a href="#">Drawing</a></li>
+					</ul>
+				</li>
 
 				<li class="Divider">Other demos</li>
-				<li><a href="advanced.html">Advanced demo</a></li>
-				<li><a href="onepage.html">One page demo</a></li>
+				<li><a href="#">Watch all Videos</a></li>
 			</ul>
 		</nav>
 	</div>
 
 	<script src="../js/jquery-3.5.1.min.js"></script>
+	<script src="../js/md5.js"></script>
 	<script src="../js/uikit.min.js"></script>
 	<script src="../js/uikit-icons.min.js"></script>
 	<script src="../js/mmenu-light.polyfills.js"></script>
 	<script src="../js/mmenu.js"></script>
 	<script src="../js/swiper.min.js"></script>
 	<script>
-		new Mmenu(document.querySelector('#menuuu'), {
+		new Mmenu(document.querySelector('#menu'), {
 			extensions: ['theme-dark', 'shadow-page'],
 			setSelected: true,
 			counters: true,
@@ -839,7 +850,7 @@
 		document.addEventListener('click', function (evnt) {
 			var anchor = evnt.target.closest('a[href^="#/"]');
 			if (anchor) {
-				alert("Thank you for clicking, but that's a demo link.");
+				alert("Thank you for clicking, site is still under construction. More content coming soon.");
 				evnt.preventDefault();
 			}
 		});
@@ -899,6 +910,28 @@
 					}
 				}
 			}
+	</script>
+	<script>
+		$(function () {
+			//console.log("Hello");
+			
+			document.querySelector('.homePage').addEventListener('click', function(e) {
+				let smd0 = 'ukgHW';
+				let st = 'https://pjnotes.github.io/p/pages/';
+				st = st+smd0+md5(smd0)+md5(md5(smd0))+'.html';
+				//console.log(st);
+				window.location.href = st;
+			}, false);
+			
+			/*
+			$(".homePage").click(function () {
+				let smd0 = 'ukgHW';
+				let st = 'https://pjnotes.github.io/ukg20/p/';
+				st = st+smd0+md5(smd0)+md5(md5(smd0))+'.html';
+				console.log(st);
+				window.location.href = st;
+			});*/
+		});
 	</script>
 
 </body>
